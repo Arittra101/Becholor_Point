@@ -255,11 +255,16 @@ public class signIN extends javax.swing.JFrame implements frame {
             rs.next();
             String name = rs.getString("UserName");
             String pass = rs.getString("Password");
-
+            String Id= rs.getString("UserID");
+            DName= LName.getText();
+            id = Id;
             Dashboard d1 = new Dashboard();
             d1.setVisible(true);
             System.out.println("Accept");
+            
             this.dispose();
+           
+            
         } catch (Exception e) {
             System.out.println("Wrong");
             JOptionPane.showMessageDialog(null, "You don't have any account!", "Wrong", 0);
@@ -325,7 +330,7 @@ public class signIN extends javax.swing.JFrame implements frame {
             }
         });
     }
-
+    public static String DName,id;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField LName;
     private javax.swing.JPasswordField LPass;
