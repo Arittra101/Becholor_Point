@@ -18,6 +18,7 @@ public class Report extends javax.swing.JFrame implements frame {
      */
     public Report() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -347,11 +348,10 @@ public class Report extends javax.swing.JFrame implements frame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(44, 44, 44)
                 .addComponent(jLabel2)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(270, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(340, Short.MAX_VALUE))
         );
 
         jLabel1.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
@@ -421,7 +421,7 @@ public class Report extends javax.swing.JFrame implements frame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        setSize(new java.awt.Dimension(1166, 839));
+        setSize(new java.awt.Dimension(1137, 712));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

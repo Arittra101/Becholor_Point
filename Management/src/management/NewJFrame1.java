@@ -38,6 +38,7 @@ public class NewJFrame1 extends javax.swing.JFrame implements frame {
      */
     public NewJFrame1() {
         initComponents();
+        setLocationRelativeTo(null);
         conn = databaseConnection.connectdb();
         DateFormat df = new SimpleDateFormat("dd/MM/yy");
         Calendar calobj = Calendar.getInstance();

@@ -19,6 +19,7 @@ public class About extends javax.swing.JFrame implements frame {
      */
     public About() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -415,7 +416,7 @@ public class About extends javax.swing.JFrame implements frame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        setSize(new java.awt.Dimension(1166, 594));
+        setSize(new java.awt.Dimension(1137, 712));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

@@ -27,7 +27,7 @@ public class M_Finance extends javax.swing.JFrame implements frame {
     public M_Finance() {
 
         initComponents();
-
+        setLocationRelativeTo(null);
         conn = databaseConnection.connectdb();
         String query = "SELECT *\n"
                 + "FROM  userinfo\n"
@@ -425,7 +425,7 @@ public class M_Finance extends javax.swing.JFrame implements frame {
         );
 
         Welcome.setFont(new java.awt.Font("Calibri", 1, 28)); // NOI18N
-        Welcome.setForeground(new java.awt.Color(0, 204, 51));
+        Welcome.setForeground(new java.awt.Color(0, 102, 255));
         Welcome.setText("Hey Welcome!");
 
         jLabel6.setFont(new java.awt.Font("Calibri", 0, 28)); // NOI18N
@@ -437,19 +437,19 @@ public class M_Finance extends javax.swing.JFrame implements frame {
         jLabel8.setFont(new java.awt.Font("Calibri", 0, 28)); // NOI18N
         jLabel8.setText("Given Money:");
 
-        M_Ouan.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        M_Ouan.setForeground(new java.awt.Color(0, 204, 51));
+        M_Ouan.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        M_Ouan.setForeground(new java.awt.Color(1, 122, 255));
         M_Ouan.setText("0");
 
         dd.setFont(new java.awt.Font("Calibri", 0, 28)); // NOI18N
         dd.setText("Total Meal Cost:");
 
-        M_Cost.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        M_Cost.setForeground(new java.awt.Color(0, 204, 51));
+        M_Cost.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        M_Cost.setForeground(new java.awt.Color(1, 122, 255));
         M_Cost.setText("0");
 
-        G_Money.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        G_Money.setForeground(new java.awt.Color(0, 204, 51));
+        G_Money.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        G_Money.setForeground(new java.awt.Color(1, 122, 255));
         G_Money.setText("0");
 
         F_Name.setFont(new java.awt.Font("Calibri", 1, 28)); // NOI18N
@@ -460,22 +460,26 @@ public class M_Finance extends javax.swing.JFrame implements frame {
         L_Name.setForeground(new java.awt.Color(1, 122, 255));
         L_Name.setText("Last");
 
-        N_Cost.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        N_Cost.setForeground(new java.awt.Color(0, 204, 51));
+        N_Cost.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        N_Cost.setForeground(new java.awt.Color(1, 122, 255));
         N_Cost.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         N_Cost.setText("0");
         N_Cost.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 26)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Calibri", 1, 26)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(1, 122, 255));
         jLabel1.setText("Taka");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 26)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Calibri", 1, 26)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(1, 122, 255));
         jLabel4.setText("Taka");
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 26)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Calibri", 1, 26)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(1, 122, 255));
         jLabel5.setText("Taka");
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 26)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Calibri", 1, 26)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(1, 122, 255));
         jLabel9.setText("Taka");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -484,12 +488,10 @@ public class M_Finance extends javax.swing.JFrame implements frame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Welcome)
                         .addGap(8, 8, 8)
                         .addComponent(F_Name)
@@ -948,7 +950,7 @@ public class M_Finance extends javax.swing.JFrame implements frame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        setSize(new java.awt.Dimension(1166, 687));
+        setSize(new java.awt.Dimension(1137, 712));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

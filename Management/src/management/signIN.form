@@ -345,7 +345,7 @@
               <Color blue="ff" green="7a" red="1" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Login for Admin"/>
+            <Property name="text" type="java.lang.String" value="LOGIN AS ADMIN"/>
           </Properties>
         </Component>
       </SubComponents>

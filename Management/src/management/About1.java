@@ -17,6 +17,7 @@ public class About1 extends javax.swing.JFrame {
      */
     public About1() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -94,7 +95,7 @@ public class About1 extends javax.swing.JFrame {
             .addGroup(dashboardBoxLayout.createSequentialGroup()
                 .addGap(49, 49, 49)
                 .addComponent(dash)
-                .addGap(0, 105, Short.MAX_VALUE))
+                .addGap(0, 104, Short.MAX_VALUE))
             .addGroup(dashboardBoxLayout.createSequentialGroup()
                 .addComponent(indicator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(225, 225, 225))
@@ -334,7 +335,7 @@ public class About1 extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel4)
-                .addContainerGap(206, Short.MAX_VALUE))
+                .addContainerGap(349, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);

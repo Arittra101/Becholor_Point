@@ -27,6 +27,7 @@ public class signIN extends javax.swing.JFrame implements frame {
 
     public signIN() {
         initComponents();
+        setLocationRelativeTo(null);
         conn = databaseConnection.connectdb();
 
     }
@@ -193,7 +194,7 @@ public class signIN extends javax.swing.JFrame implements frame {
         Admin.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         Admin.setForeground(new java.awt.Color(1, 122, 255));
         Admin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Admin.setText("Login for Admin");
+        Admin.setText("LOGIN AS ADMIN");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -312,7 +313,7 @@ public class signIN extends javax.swing.JFrame implements frame {
             DName = LName.getText();
             id = Id;
             if (admin == 1&&l==1) {
-                JOptionPane.showMessageDialog(null, "Successfully Enter in Admin Pannel", "Hey!", 1);
+                JOptionPane.showMessageDialog(null, "Successfully Entered in Admin Pannel", "Hey!", 1);
                NewJFrame1 m = new NewJFrame1();
                 m.setVisible(true);
                 this.dispose();
@@ -320,7 +321,7 @@ public class signIN extends javax.swing.JFrame implements frame {
             } else if(admin==0){
                 
                 d=1;
-                name1 = name1 + " Successfully Log IN";
+                name1 = name1 + "Successfully Logged In";
                 JOptionPane.showMessageDialog(null, name1, "Hey!", 1);
                 Dashboard d1 = new Dashboard();
                 d1.setVisible(true);
@@ -328,14 +329,14 @@ public class signIN extends javax.swing.JFrame implements frame {
                 System.out.println("Accept");
             }
             else{
-                 JOptionPane.showMessageDialog(null, "Please Pressed 'Click Here' to go Admin Log In You are in Member Log IN", "Hey!", 1);
+                 JOptionPane.showMessageDialog(null, "Please press 'Click Here' to go to Admin-LOGIN panel. You are in Member-LOGIN panel", "Hey!", 1);
             }
 
            
 
         } catch (Exception e) {
             System.out.println(e);
-            JOptionPane.showMessageDialog(null, "You don't have any account! ", "Wrong", 0);
+            JOptionPane.showMessageDialog(null, "You don't have any account", "Wrong", 0);
             LName.setText(null);
             LPass.setText(null);
         }

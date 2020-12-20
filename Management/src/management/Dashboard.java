@@ -33,6 +33,7 @@ public class Dashboard extends javax.swing.JFrame implements frame {
 
     public Dashboard() {
         initComponents();
+        setLocationRelativeTo(null);
         conn = databaseConnection.connectdb();
         String query = "SELECT FirstName,LastName,UserName,University,MobileNo,LocalG,LocalGNum,EmailAdd,BloodG\n"
                 + "FROM  userinfo\n"
@@ -141,6 +142,7 @@ public class Dashboard extends javax.swing.JFrame implements frame {
         setLocationByPlatform(true);
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.setPreferredSize(new java.awt.Dimension(1119, 665));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -611,7 +613,7 @@ public class Dashboard extends javax.swing.JFrame implements frame {
                                 .addComponent(F_name)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(L_Name)))))
-                .addContainerGap(1582, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

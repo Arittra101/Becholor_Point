@@ -28,6 +28,7 @@ public class homemate extends javax.swing.JFrame implements frame {
      */
     public homemate() {
         initComponents();
+        setLocationRelativeTo(null);
         conn = databaseConnection.connectdb();
 
         String query = "SELECT CONCAT(FirstName, ' ', LastName) as fullname FROM userinfo where UserID !=6";
@@ -674,7 +675,7 @@ public class homemate extends javax.swing.JFrame implements frame {
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(65, 65, 65)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(80, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -687,12 +688,10 @@ public class homemate extends javax.swing.JFrame implements frame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(1120, 608));
+        setSize(new java.awt.Dimension(1137, 712));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -1039,10 +1038,10 @@ public class homemate extends javax.swing.JFrame implements frame {
             rs = st.executeQuery(query);
 
             rs.next();
-            MQuan.setText(rs.getString("Send_money"));
-            GivenCost.setText(rs.getString("Send_money"));
-            TMealCost.setText(rs.getString("Send_money"));
-            TNetCost.setText(rs.getString("Send_money"));
+            MQuan1.setText(rs.getString("Send_money"));
+            GivenCost1.setText(rs.getString("Send_money"));
+            TMealCost1.setText(rs.getString("Send_money"));
+            TNetCost1.setText(rs.getString("Send_money"));
 
         } catch (Exception ex) {
             System.out.println(ex);
@@ -1087,26 +1086,18 @@ public class homemate extends javax.swing.JFrame implements frame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel About;
-    private javax.swing.JLabel GivenCost;
     private javax.swing.JLabel GivenCost1;
     private javax.swing.JPanel Home_Mate;
     private javax.swing.JPanel Log_Out;
     private javax.swing.JLabel Log_Out1;
-    private javax.swing.JLabel MQuan;
     private javax.swing.JLabel MQuan1;
     private javax.swing.JLabel M_Remain;
-    private javax.swing.JLabel MealCostValue;
     private javax.swing.JLabel MealCostValue1;
-    private javax.swing.JLabel MealQuanValue;
     private javax.swing.JLabel MealQuanValue1;
     private javax.swing.JLabel N_Mem;
-    private javax.swing.JLabel Net_amountValue;
     private javax.swing.JLabel Net_amountValue1;
-    private javax.swing.JLabel Send_moneyValue;
     private javax.swing.JLabel Send_moneyValue1;
-    private javax.swing.JLabel TMealCost;
     private javax.swing.JLabel TMealCost1;
-    private javax.swing.JLabel TNetCost;
     private javax.swing.JLabel TNetCost1;
     private javax.swing.JLabel about;
     private javax.swing.JLabel dash;
@@ -1124,7 +1115,6 @@ public class homemate extends javax.swing.JFrame implements frame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JLabel user1;

@@ -29,6 +29,7 @@ public class Member_Print extends javax.swing.JFrame {
 
     public Member_Print() {
         initComponents();
+        setLocationRelativeTo(null);
 
     }
 
@@ -158,7 +159,7 @@ public class Member_Print extends javax.swing.JFrame {
         jLabel5.setText("Meal Quantity:");
 
         jLabel6.setFont(new java.awt.Font("Rockwell", 1, 24)); // NOI18N
-        jLabel6.setText("Given Cost:");
+        jLabel6.setText("Given Meal Cost:");
 
         jLabel7.setFont(new java.awt.Font("Rockwell", 1, 24)); // NOI18N
         jLabel7.setText("Total Meal Cost:");
@@ -218,12 +219,11 @@ public class Member_Print extends javax.swing.JFrame {
                             .addComponent(T_M_Cost)))
                     .addGroup(PayLayout.createSequentialGroup()
                         .addGap(69, 69, 69)
-                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 841, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 841, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(PayLayout.createSequentialGroup()
+                        .addGap(358, 358, 358)
+                        .addComponent(pay1)))
                 .addContainerGap(32, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PayLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(pay1)
-                .addGap(343, 343, 343))
         );
         PayLayout.setVerticalGroup(
             PayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -278,11 +278,11 @@ public class Member_Print extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(439, 439, 439)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(Back)
-                .addGap(18, 18, 18)
+                .addGap(40, 40, 40)
                 .addComponent(print)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(59, 59, 59))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Pay, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
